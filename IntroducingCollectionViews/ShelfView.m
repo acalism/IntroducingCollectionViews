@@ -13,7 +13,7 @@ const NSString *kShelfViewKind = @"ShelfView";
 
 @implementation ShelfView
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {

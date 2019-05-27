@@ -10,7 +10,7 @@
 
 @implementation ConferenceLayoutAttributes
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     if (self) {
@@ -21,7 +21,7 @@
     return self;
 }
 
-- (id)copyWithZone:(NSZone *)zone
+- (instancetype)copyWithZone:(NSZone *)zone
 {
     ConferenceLayoutAttributes *newAttributes = [super copyWithZone:zone];
     newAttributes.headerTextAlignment = self.headerTextAlignment;

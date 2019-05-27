@@ -18,7 +18,7 @@
 #define ACTIVE_DISTANCE 200
 #define ZOOM_FACTOR 0.3
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     if (self)

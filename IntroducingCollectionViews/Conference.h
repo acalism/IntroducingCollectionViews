@@ -15,7 +15,7 @@
 @property (nonatomic, assign, readonly) NSUInteger durationDays;
 @property (nonatomic, strong, readonly) NSMutableArray *speakers;
 
-- (id)initWithName:(NSString *)name startDate:(NSDate *)startDate duration:(NSUInteger)durationDays speakers:(NSArray *)speakers;
+- (instancetype)initWithName:(NSString *)name startDate:(NSDate *)startDate duration:(NSUInteger)durationDays speakers:(NSArray *)speakers;
 + (Conference *)conferenceWithName:(NSString *)name startDate:(NSDate *)startDate duration:(NSUInteger)durationDays speakers:(NSArray *)speakers;
 
 - (BOOL)deleteSpeakerAtIndex:(NSUInteger)index;

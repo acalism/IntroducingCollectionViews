@@ -22,13 +22,13 @@ NSString *kStarRatingFooterID = @"StarRatingFooter";
 
 @property (nonatomic, strong) NSArray *conferences;
 
-- (id)initWithConferences:(NSArray *)conferences;
+- (instancetype)initWithConferences:(NSArray *)conferences;
 
 @end
 
 @implementation CocoaConf
 
-- (id)initWithConferences:(NSArray *)conferences
+- (instancetype)initWithConferences:(NSArray *)conferences
 {
     self = [super init];
     if (self)

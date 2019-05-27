@@ -16,7 +16,7 @@
 #define ZOOM_FACTOR 0.3
 #define FLOW_OFFSET 40
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     if (self)

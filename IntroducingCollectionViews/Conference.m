@@ -20,7 +20,7 @@
 
 @implementation Conference
 
-- (id)initWithName:(NSString *)name startDate:(NSDate *)startDate duration:(NSUInteger)durationDays speakers:(NSArray *)speakers
+- (instancetype)initWithName:(NSString *)name startDate:(NSDate *)startDate duration:(NSUInteger)durationDays speakers:(NSArray *)speakers
 {
     self = [super init];
     if (self)
