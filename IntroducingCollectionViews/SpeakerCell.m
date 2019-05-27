@@ -26,7 +26,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.contentView.backgroundColor = [UIColor underPageBackgroundColor];
+        self.contentView.backgroundColor = UIColor.lightGrayColor; // [UIColor underPageBackgroundColor];
     }
     return self;
 }

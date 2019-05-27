@@ -11,6 +11,7 @@
 #import "SpeakerCell.h"
 #import "ConferenceHeader.h"
 #import "StarRatingFooter.h"
+#import "NSDate+Helpers.h"
 
 NSString *kConferenceHeaderID = @"ConferenceHeader";
 NSString *kConferenceHeaderSmallID = @"ConferenceHeaderSmall";

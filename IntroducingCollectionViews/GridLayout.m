@@ -52,7 +52,7 @@
     if (self.scrollDirection == UICollectionViewScrollDirectionVertical)
     {
         // Calculate where shelves go in a vertical layout
-        int sectionCount = [self.collectionView numberOfSections];
+        NSInteger sectionCount = [self.collectionView numberOfSections];
         
         CGFloat y = 0;
         CGFloat availableWidth = self.collectionViewContentSize.width - (self.sectionInset.left + self.sectionInset.right);
@@ -63,7 +63,7 @@
             y += self.headerReferenceSize.height;
             y += self.sectionInset.top;
             
-            int itemCount = [self.collectionView numberOfItemsInSection:section];
+            NSInteger itemCount = [self.collectionView numberOfItemsInSection:section];
             int rows = ceilf(itemCount/(float)itemsAcross);
             for (int row = 0; row < rows; row++)
             {

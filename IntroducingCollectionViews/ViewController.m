@@ -223,7 +223,7 @@
     
     CGPoint point = [gestureRecognizer locationInView:self.collectionView];
     
-    int sectionCount = [self.collectionView numberOfSections];
+    NSInteger sectionCount = [self.collectionView numberOfSections];
     for (int section = 0; section < sectionCount; section++)
     {
         NSString *kind = (self.layoutStyle == SpeakerLayoutStacks)? [SmallConferenceHeader kind] : UICollectionElementKindSectionHeader;
@@ -233,7 +233,7 @@
         {
             if (CGRectContainsPoint(attributes.frame, point))
             {
-                int speakerCount = [self.collectionView numberOfItemsInSection:section];
+                NSInteger speakerCount = [self.collectionView numberOfItemsInSection:section];
                 id cocoaConf = self.collectionView.dataSource;
                 if ([cocoaConf restoreSpeakerInSection:section])
                 {
@@ -333,7 +333,7 @@
     if (cellPath)
     {
         CocoaConf *cocoaConf = (CocoaConf *)self.collectionView.dataSource;
-        int speakerCount = [self.collectionView numberOfItemsInSection:cellPath.section];
+        NSInteger speakerCount = [self.collectionView numberOfItemsInSection:cellPath.section];
         if ([cocoaConf deleteSpeakerAtPath:cellPath])
         {
             // WORKAROUND: deleting last cell from section often yields NSInternalInconsistencyException in UICollectionView
